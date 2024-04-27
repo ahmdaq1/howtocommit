@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <title>Nova Security</title>
+  <link rel="stylesheet" href="bootstrap-5.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <style>
+    .section1-1 {
+      margin-left: 290px;
+    }
+
+    .section1-2 {
+      margin-left: 90px;
+    }
+
+    .ilustration-1 {
+      height: 400px;
+    }
+
+    .ilustration-3 {
+      height: 250px;
+    }
+
+    .navbar {
+      background-color: #ED9455;
+    }
+
+    .section-bg-custom {
+      background-color: #e4efff;
+    }
+
+    .nav-tabs {
+      --bs-nav-tabs-border-color: #fff;
+      --bs-nav-tabs-link-active-border-color: #fff #fff #000;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .floating {
+      animation-name: floating;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      margin-left: 30px;
+      margin-top: 5px;
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translate(0, 0px);
+      }
+
+      50% {
+        transform: translate(0, 15px);
+      }
+
+      100% {
+        transform: translate(0, -0px);
+      }
+    }
+
+    .link-tab-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+      line-height: 1.688rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .link-tab-desc {
+      font-size: 1rem;
+      letter-spacing: .005em;
+      line-height: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .social-icon {
+      font-size: 30px;
+    }
+
+    .social-icon:hover {
+      color: #ffffff !important;
+    }
+
+    .menu-footer {
+      display: block;
+      text-decoration: none;
+      color: rgba(255, 193, 7, 0.70);
+    }
+
+    .menu-footer:hover {
+      color: rgba(255, 193, 7, 1) !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .section1-1 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+      }
+
+      .section1-2 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      .section5-1 {
+        padding-left: 30px;
+        padding-right: 10px;
+      }
+
+      .ilustration-1 {
+        height: 300px;
+      }
+
+      .ilustration-2 {
+        width: 240px;
+        margin-bottom: 20px;
+      }
+
+      .ilustration-3 {
+        height: 200px;
+        margin-bottom: 20px;
+        padding-left: 30px;
+      }
+
+      .ilustration-4 {  
+        height: 150px;
+        margin-bottom: 15px;
+        padding-left: 30px;
+      }
+
+
+      #footer-copyright {
+        text-align: center;
+      }
+
+      #footer-powered {
+        text-align: center !important;
+      }
+    }
+  </style>
+</head>
+
+<!--Navbar-->
+
+<body>
+  <header class="container-fluid p-0">
+    <nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="logo" width="26px" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tentang Kami</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Harga
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Lite</a></li>
+                <li><a class="dropdown-item" href="#">Advanced</a></li>
+                <li><a class="dropdown-item" href="#">Premium</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Kontak
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Email</a></li>
+                <li><a class="dropdown-item" href="#">WhatsApp</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Telefon</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Section pertama-->
+
+  <main class="container-fluid" style="margin-top: 67.6px;">
+    <section class="row bg-light text-black py-5">
+      <div class="col-sm-6 col-sm-6 order-md-last">
+        <div class="section1-2">
+          <img src="images/ilustrations/ilust-1.svg" alt="ilustration-1" class="ilustration-1">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="section1-1">
+          <div data-aos="zoom-in" data-aos-duration="1500">
+            <h1 class="mb-4">Nova Security.</h1>
+          </div>
+          <div data-aos="zoom-in" data-aos-duration="1500">
+            <p>Kami adalah tim independen yang akan membuat ketahanan website anda lebih bagus dengan harga yang
+              terjangkau.</p>
+          </div>
+          <div class="floating" style="height: 150px; width: 150px;
+            padding: 10px">
+            <button class="btn btn-lg btn-warning mt-4" href="section2">Tentang Kami</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Kedua-->
+
+    <section class="row section-bg-light justify-content-center py-5">
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-sm-6 text-center">
+            <img src="images/ilustrations/ilust-2.svg" alt="ilustration-2" class="ilustration-3">
+          </div>
+          <div class="col-sm-6 section5-1" id="section2">
+            <div data-aos="zoom-in-down" data-aos-duration="1500">
+              <h1>Tentang Kami.</h1>
+              <p>Nova Security adalah pemimpin dalam industri keamanan web, menyediakan solusi inovatif untuk melindungi
+                bisnis dari ancaman daring. Dibangun oleh tim ahli yang berpengalaman, kami berkomitmen untuk memberikan
+                layanan terbaik dengan fokus pada keunggulan teknis dan pelayanan pelanggan. Bergabunglah dengan kami
+                dalam
+                menjaga bisnis Anda tetap aman di era digital.</p>
+            </div>
+            <div class="my-4">
+              <div class="badge bg-success">Nova Security - Keamanan Anda, Prioritas Kami.</div>
+            </div>
+            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+              data-bs-content="Untuk sementara, pembelian ditutup karena ada isu dalam halaman pembayaran">
+              <button class="btn btn-primary" type="button" disabled>Beli</button>
+            </span>
+          </div>
+        </div>
+        <div class="text-center" id="contoh" style="color: white">
+          <h1>.</h1>
+        </div>
+
+        <!--section ketiga-->
+
+        <section class="row py-5" style="background-color: #FFEC9E;">
+          <div class="col text-center text-dark">
+            <h1>Price List</h1>
+            <div class="row justify-content-center">
+              <div class="col-sm-5">
+                <p class="lead">
+                  <small>Harga untuk security dari kami.</small>
+                </p>
+              </div>
+              <div class="text-center" id="contoh" style="color: #FFEC9E">
+                <h1>.</h1>
+              </div>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Lite Protection
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Rp 2.500.000</strong> Harga untuk Lite Protection. Website protection yang simple dan
+                      termurah.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Advanced Protection
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Rp 25.500.000</strong> Harga untuk Advanced Protection. Website protection yang lebih
+                      ketat namun terjangkau.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                      Premium Protection
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>75.000.000</strong> Harga untuk Premium Protection. Level security tertinggi, cocok untuk
+                      perusahaan.
+                    </div>
+        </section>
+        <section class="row section-bg-light justify-content-center py-5">
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-6">
+                <img src="images/ilustrations/ilust-4.svg" alt="ilustration-2" class="ilustration-3">
+              </div>
+              <div class="col-sm-6 section5-1" id="section2">
+                <div data-aos="zoom-in-down" data-aos-duration="1500">
+                  <h1>Beli Sekarang.</h1>
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                  data-bs-content="Untuk sementara, pembelian ditutup karena ada isu dalam halaman pembayaran">
+                  <button class="btn btn-primary" type="button" disabled>Beli</button>
+                </span>
+              </div>
+            </div>
+            <div class="text-center" id="contoh" style="color: white">
+              <h1>.</h1>
+            </div>
+  </main>
+
+  <!--footer-->
+  <footer class="container-fluid py-2 bg-black text-warning">
+    <div class="row justify-content-center my-5">
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-sm-3 mb-5">
+            <div class="mb-4 text-center">
+              <img src="images/Logo.png" alt="Logo Pesat" width="40px" class="d-inline-block">
+            </div>
+            <p class="mb-3">Seorang pembuat website yang berbakat dan berpengalaman, Ahmad menghadirkan solusi kreatif
+              dan fungsional untuk setiap proyek.</p>
+            <p class="mb-1">Email: <a href="mailto:ahmadaqilarozan@gmail.com">ahmadaqilarozan@gmail.com</a></p>
+            <p class="mb-3">Whatsapp: <a href="https://wa.me/+6283818998965" target="_blank">083818998965</a></p>
+            <div class="d-flex flex-row mb-2">
+              <a href="https://id.linkedin.com" class="text-warning social-icon" target="_blank">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+            <div class="d-flex flex-row">
+              <a href="https://x.com" class="text-warning social-icon" target="_blank">
+                <i class="bi bi-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr style="border-width: 5px;">
+        <div class="row justify-content-betweeen">
+          <div class="col-sm-6">Copyright &copy;2024</div>
+          <div class="col-sm-6 text-end">Powered by Studentday Web Design</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
